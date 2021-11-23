@@ -155,15 +155,36 @@ img, svg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 65%;
+  height: 78%;
+  /* height: 65%; */
   background: #EDEAE8;
   z-index: -1;
 }
 
-.image_grid {
+.image_grid_container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 9.375rem;
+  margin-top: 2.75rem;
+  /* margin-top: 6.25rem; */
+}
+
+.grid_element {
+  overflow: hidden;
+  transition: all 0.8s;
+}
+
+.grid_element img {
+  transition: all 0.8s;
+}
+
+.grid_element:hover > img {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+
+.element_mid {
+  margin: 0 0.875rem;
 }
 
 /*--------------------------------------------------------------
