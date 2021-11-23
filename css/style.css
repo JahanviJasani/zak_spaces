@@ -56,7 +56,7 @@ img, svg {
 # Typography
 --------------------------------------------------------------*/
 .title-one {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.25;
   letter-spacing: -0.8px;
 }
@@ -246,5 +246,29 @@ img, svg {
   --------------------------------------------------------------*/
   .nav_link {
     padding: 0.5rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /*--------------------------------------------------------------
+  # Typography
+  --------------------------------------------------------------*/
+  .title-one {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /*--------------------------------------------------------------
+  # Typography
+  --------------------------------------------------------------*/
+  .title-one {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .image_grid_container {
+    padding: 0;
   }
 }
