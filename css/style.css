@@ -99,11 +99,6 @@ img, svg {
   padding: 0.3125rem;
 }
 
-.mobile_nav {
-  left: 0;
-  transition: left 1s ease;
-}
-
 .nav_link {
   position: relative;
   display: block;
@@ -160,7 +155,7 @@ img, svg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 65%;
   background: #EDEAE8;
   z-index: -1;
 }
@@ -168,7 +163,7 @@ img, svg {
 .image_grid {
   display: flex;
   justify-content: space-between;
-  margin-top: 7.5rem;
+  margin-top: 9.375rem;
 }
 
 /*--------------------------------------------------------------
@@ -187,6 +182,10 @@ img, svg {
     transition: left 1.2s ease;
     z-index: 2;
     overflow-y: auto;
+  }
+  .mobile_nav {
+    left: 0;
+    transition: left 1s ease;
   }
 }
 
