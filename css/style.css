@@ -1,11 +1,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   color: #282E3E;
   background: #F7F4F2;
   margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 *,
@@ -24,110 +30,133 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 img, svg {
   vertical-align: middle;
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 24px 0;  
   transition: all 0.5s;
   z-index: 997;
 }
 
-.navbar {
-  padding: 0;
-}
-
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
-.nav-link {
-  position: relative;
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgba(40, 46, 62, 0.8);
-  white-space: nowrap;
-  transition: 0.3s;
-}
-
-.nav-link:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #D11919;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.navbar li:hover > a {
-  color: #282E3E;
-}
-
-.navbar li:hover > a:before {
-  opacity: 1;
-}
-
-.mobile-nav-toggle {
+.nav_toggle {
   color: #D11919;
-  font-size: 1.5rem;
   cursor: pointer;
-  display: none;
-  line-height: 0;
   transition: 0.5s;
 }
 
-@media (max-width: 767px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
-    display: none;
-  }
+.mobile-nav-open {
+  font-size: 1.5rem;
 }
 
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
+.mobile-nav-close {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  font-size: 1.125rem;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.3125rem;
+}
+
+.mobile_nav {
   left: 0;
-  bottom: 0;
-  background: rgba(43, 111, 142, 0.9);
-  transition: 0.3s;
+  transition: left 1s ease;
 }
 
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.navbar-mobile ul {
+.nav_link {
+  position: relative;
   display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
-  overflow-y: auto;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(40, 46, 62, 0.8);
+  padding: 1.5rem 0;
+  white-space: nowrap;
   transition: 0.3s;
+  border-bottom: 1px solid rgba(224, 222, 220, 0.5);
+}
+
+.header-fixed {
+  background: #F7F4F2;
+  transition: all 0.5s;
+  box-shadow: 5px 10px 30px rgba(74,74,77,.05);
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Media Queries
 --------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .nav_menu_container {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 380px;
+    background: #EDEAE8;
+    padding: 2.5rem;
+    transition: left 1.2s ease;
+    z-index: 2;
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .nav_toggle {
+    display: none;
+  }
+  .nav_menu {
+    display: flex;
+  }
+  .nav_link {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1.125rem;
+    border: none;
+  }
+  .nav_link:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #D11919;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .nav_menu li:hover > a {
+    color: #282E3E;
+  }
+  .nav_menu li:hover > a:before {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .nav_link {
+    padding: 0.5rem 1.5rem;
+  }
+}
