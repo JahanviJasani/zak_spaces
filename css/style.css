@@ -144,7 +144,7 @@ img, svg {
 # Sections
 --------------------------------------------------------------*/
 .section-padding {
-  padding: 6.25rem 0;
+  padding: 7.5rem 0;
 }
 
 /*--------------------------------------------------------------
@@ -163,6 +163,12 @@ img, svg {
   height: 70%;
   background: #EDEAE8;
   z-index: -1;
+}
+
+.image_grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7.5rem;
 }
 
 /*--------------------------------------------------------------
