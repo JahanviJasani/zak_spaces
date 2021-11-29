@@ -43,7 +43,7 @@
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 600, function() {
+        }, 100, function() {
           var $target = $(target);
           $target.focus();
           if ($target.is(":focus")) { // Checking if the target was focused
