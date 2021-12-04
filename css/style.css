@@ -42,7 +42,7 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0;
 }
@@ -239,6 +239,9 @@ img, svg {
 }
 
 @media only screen and (min-width: 600px) {
+  p {
+    font-size: 1.125rem;
+  }
   /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
