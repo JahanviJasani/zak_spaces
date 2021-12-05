@@ -126,8 +126,8 @@
                     <span>01</span>
                   </div>
                   <div class="wstep_content">
-                    <h3 class="wstep_header title-three mb-1">Questionnaire</h3>
-                    <p>Fill out a short questionnaire and let our algorithms come into play. We dig into our vast database, apply analytics to connect you to the right broker.</p>
+                    <h3 class="wstep_header title-three mb-1">Fill in the questionnaire</h3>
+                    <p>Fill in a short questionnaire and let our algorithms come into play. We dig into our vast database, apply analytics to connect you to the right broker.</p>
                   </div>
                 </div>
                 <div class="wstep_block d-flex">
@@ -135,7 +135,7 @@
                     <span>02</span>
                   </div>
                   <div class="wstep_content">
-                    <h3 class="wstep_header title-three mb-1">Here you go!</h3>
+                    <h3 class="wstep_header title-three mb-1">Wait for your dream to become a reality</h3>
                     <p>We bring you the best suited broker who can not only give you the most reliable information but also crack the best possible deal from the developers.</p>
                   </div>
                 </div>
@@ -154,7 +154,7 @@
           <div class="col-md-9">
             <form  class="lgen_form" id="lgen_form" method="post" novalidate>
               <div class="accordion_block">
-                <div class="accordion_q open">
+                <div class="accordion_q">
                   <div class="form_header">
                     <h4 class="title-three">Personal</h4>
                   </div>  
@@ -180,14 +180,133 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label class="form-label">Name<span class="is-required"> *</span></label>
-                        <input type="text" name="name" class="form-control">
+                        <label class="form-label">Email Address<span class="is-required"> *</span></label>
+                        <input type="email" name="email" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label class="form-label">Name<span class="is-required"> *</span></label>
+                        <label class="form-label">I'm looking for a Property because I want to</label>
+                        <select name="why_property" class="custom-select form-control">
+                          <option hidden></option>
+                          <option value="Shift to my own house">Shift to my own house</option>
+                          <option value="Move to a bigger house">Move to a bigger house</option>
+                          <option value="Switch to a better locality">Switch to a better locality</option>
+                          <option value="Invest in a good property ">Invest in a good property </option>
+                          <option value="Settle in another city">Settle in another city</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_block">
+                <div class="accordion_q open">
+                  <div class="form_header">
+                    <h4 class="title-three">Property</h4>
+                  </div>  
+                  <div class="accordion_icon ms-3">
+                    <i class="icon-chevron-down text-dark"></i>
+                  </div>
+                </div>
+                <div class="accordion_a">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-label">Property Type<span class="is-required"> *</span></label>
                         <input type="text" name="name" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="form-label">Budget</label>
+                      <div class="row"> 
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select name="budget_min" class="custom-select form-control">
+                              <option hidden>Min</option>
+                              <option value="5 Lacs">5 Lacs</option>
+                              <option value="10 Lacs">10 Lacs</option>
+                              <option value="15 Lacs">15 Lacs</option>
+                              <option value="20 Lacs">20 Lacs</option>
+                              <option value="25 Lacs">25 Lacs</option>
+                              <option value="30 Lacs">30 Lacs</option>
+                              <option value="35 Lacs">35 Lacs</option>
+                              <option value="40 Lacs">40 Lacs</option>
+                              <option value="45 Lacs">45 Lacs</option>
+                              <option value="50 Lacs">50 Lacs</option>
+                              <option value="60 Lacs">60 Lacs</option>
+                              <option value="70 Lacs">70 Lacs</option>
+                              <option value="80 Lacs">80 Lacs</option>
+                              <option value="90 Lacs">90 Lacs</option>
+                              <option value="1 Crore">1crore</option>
+                              <option value="1.2 Crores">1.2 Crores</option>
+                              <option value="1.4 Crores">1.4 Crores</option>
+                              <option value="1.6 Crores">1.6 Crores</option>
+                              <option value="1.8 Crores">1.8 Crores</option>
+                              <option value="2 Crores">2 Crores</option>
+                              <option value="2.3 Crores">2.3 Crores</option>
+                              <option value="2.6 Crores">2.6 Crores</option>
+                              <option value="3 Crores">3 Crores</option>
+                              <option value="3.5 Crores">3.5 Crores</option>
+                              <option value="4 Crores">4 Crores</option>
+                              <option value="4.5 Crores">4.5 Crores</option>
+                              <option value="5 Crores">5 Crores</option>
+                              <option value="> 5 Crores">> 5 Crores</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select name="budget_max" class="custom-select form-control">
+                              <option hidden>Max</option>
+                              <option value="5 Lacs">5 Lacs</option>
+                              <option value="10 Lacs">10 Lacs</option>
+                              <option value="15 Lacs">15 Lacs</option>
+                              <option value="20 Lacs">20 Lacs</option>
+                              <option value="25 Lacs">25 Lacs</option>
+                              <option value="30 Lacs">30 Lacs</option>
+                              <option value="35 Lacs">35 Lacs</option>
+                              <option value="40 Lacs">40 Lacs</option>
+                              <option value="45 Lacs">45 Lacs</option>
+                              <option value="50 Lacs">50 Lacs</option>
+                              <option value="60 Lacs">60 Lacs</option>
+                              <option value="70 Lacs">70 Lacs</option>
+                              <option value="80 Lacs">80 Lacs</option>
+                              <option value="90 Lacs">90 Lacs</option>
+                              <option value="1 Crore">1crore</option>
+                              <option value="1.2 Crores">1.2 Crores</option>
+                              <option value="1.4 Crores">1.4 Crores</option>
+                              <option value="1.6 Crores">1.6 Crores</option>
+                              <option value="1.8 Crores">1.8 Crores</option>
+                              <option value="2 Crores">2 Crores</option>
+                              <option value="2.3 Crores">2.3 Crores</option>
+                              <option value="2.6 Crores">2.6 Crores</option>
+                              <option value="3 Crores">3 Crores</option>
+                              <option value="3.5 Crores">3.5 Crores</option>
+                              <option value="4 Crores">4 Crores</option>
+                              <option value="4.5 Crores">4.5 Crores</option>
+                              <option value="5 Crores">5 Crores</option>
+                              <option value="> 5 Crores">> 5 Crores</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">Number of Bedrooms</label>
+                        <select name="department" class="custom-select form-control">
+                          <option hidden></option>
+                          <option value="Shift to my own house">Shift to my own house</option>
+                          <option value="Move to a bigger house">Move to a bigger house</option>
+                          <option value="Switch to a better locality">Switch to a better locality</option>
+                          <option value="Invest in a good property ">Invest in a good property </option>
+                          <option value="Settle in another city">Settle in another city</option>
+                          <option value="Other">Other</option>
+                        </select>
                       </div>
                     </div>
                   </div>
