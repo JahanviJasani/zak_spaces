@@ -12,6 +12,7 @@ body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 *,
@@ -43,7 +44,7 @@ h1, h2, h3 {
 
 p {
   font-size: 1.0625rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -238,6 +239,44 @@ img, svg {
 
 .stats_text {
   font-size: 1rem;
+}
+
+/*--------------------------------------------------------------
+# How It Works
+--------------------------------------------------------------*/
+.hiw_img:before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  right: 25%;
+  left: -30%;
+  bottom: 15%;
+  background: #EDEAE8;
+  z-index: -1;
+}
+
+.wstep_block:nth-child(1):before {
+  content: "";
+  position: absolute;
+  left: 26.5px;
+  top: 64px;
+  height: calc(100% - 28px);
+  border: 1px dashed #b9b7b6;
+}
+
+.wcount {
+  font-weight: 500;
+  color: #D11919;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #D11919;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.wstep_header {
+  line-height: 50px;
 }
 
 /*--------------------------------------------------------------
