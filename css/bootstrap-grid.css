@@ -77,13 +77,19 @@
 
 @media (min-width: 600px) {
   .container {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
     padding: 0 35px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    padding: 0 50px;
+    padding: 0 60px;
   }
 }
 

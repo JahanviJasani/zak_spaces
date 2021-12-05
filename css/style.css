@@ -84,6 +84,10 @@ img, svg {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .red {
   color: #D11919;
 }
@@ -244,13 +248,20 @@ img, svg {
 /*--------------------------------------------------------------
 # How It Works
 --------------------------------------------------------------*/
+.hiw_img {
+  height: 100%;
+  min-height: 60vh;
+  background: url(../img/how-it-works.png) center;
+  background-size: cover;
+}
+
 .hiw_img:before {
   content: "";
   position: absolute;
   top: -15%;
   right: 25%;
   left: -30%;
-  bottom: 15%;
+  height: 95%;
   background: #EDEAE8;
   z-index: -1;
 }
