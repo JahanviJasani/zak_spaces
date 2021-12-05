@@ -31,7 +31,6 @@
 
   // Select all links with hashes
   $('a[href*="#"]').not('[href="#"]').click(function(event) {
-    // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
@@ -46,11 +45,11 @@
         }, 100, function() {
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(":focus")) {
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.attr('tabindex','-1');
+            $target.focus();
           };
         });
         nav_close();
@@ -61,5 +60,10 @@
   function nav_close(e) {
     $('.nav_menu_container').removeClass('mobile_nav')
   }
+
+  $('.accordion_q').on('click', function () {
+    $(this).next().slideToggle(300);
+    $(this).toggleClass('open', 300);
+  });
 
 })()
