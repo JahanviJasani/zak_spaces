@@ -1675,6 +1675,14 @@ html {
   appearance: none;
 }
 
+.custom-control-input {
+  display: none;
+}
+
+.custom-control-label {
+  display: block;
+}
+
 .form-group {
   margin-bottom: 1.75rem;
 }

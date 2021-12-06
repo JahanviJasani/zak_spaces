@@ -119,7 +119,7 @@
           <div class="col-lg-6 col-xl-5 offset-lg-1">
             <div class="hiw_content">
               <h2 class="title-two mb-4">Here's how the logic driven matchmaking works<span class="red">.</span></h2>
-              <p class="mb-5">Following a strong, comprehensive two-prong approach, we connect you to our potential channel of trusted and verified brokers.</p>
+              <p class="mb-5">Following a strong, comprehensive two-prong approach, we connect you with a house hunter who will interpret your ideas of a dream home to make it a reality.</p>
               <div class="wsteps_container">
                 <div class="wstep_block relative mb-5 d-flex">
                   <div class="wcount d-flex justify-content-center align-items-center">
@@ -151,7 +151,7 @@
       <div class="container">
         <h1 class="title-one header_space text-center">Let's get started<span class="red">.</span></h1>
         <div class="row justify-content-center">
-          <div class="col-md-9">
+          <div class="col-md-10">
             <form  class="lgen_form" id="lgen_form" method="post" novalidate>
               <div class="accordion_block">
                 <div class="accordion_q">
@@ -215,7 +215,62 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-label">Property Type<span class="is-required"> *</span></label>
-                        <input type="text" name="name" class="form-control">
+                        <div class="prop_type_grid custom_scroll">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Flat" class="custom-control-input" name="property_type[]" id="flat">
+                            <label class="custom-control-label prop_box text-center" for="flat">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/flat.svg" alt="Flat" />
+                              </div>
+                              <p class="prop_type">Flat</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="House/Villa" class="custom-control-input" name="property_type[]" id="hv">
+                            <label class="custom-control-label prop_box text-center" for="hv">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/house.svg" alt="House/Villa" />
+                              </div>
+                              <p class="prop_type">House/Villa</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Plot" class="custom-control-input" name="property_type[]" id="plot">
+                            <label class="custom-control-label prop_box text-center" for="plot">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/house.svg" alt="Plot" />
+                              </div>
+                              <p class="prop_type">Plot</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Commercial Office Space" class="custom-control-input" name="property_type[]" id="office">
+                            <label class="custom-control-label prop_box text-center" for="office">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/office.svg" alt="Commercial Office Space" />
+                              </div>
+                              <p class="prop_type">Commercial Office Space</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Other Commercial" class="custom-control-input" name="property_type[]" id="other">
+                            <label class="custom-control-label prop_box text-center" for="other">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/shop.svg" alt="Plot" />
+                              </div>
+                              <p class="prop_type">Other Commercial</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Shop/Showroom" class="custom-control-input" name="property_type[]" id="shop">
+                            <label class="custom-control-label prop_box text-center" for="shop">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/commercial.svg" alt="Plot" />
+                              </div>
+                              <p class="prop_type">Shop/Showroom</p>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
