@@ -151,7 +151,7 @@
       <div class="container">
         <h1 class="title-one header_space text-center">Let's get started<span class="red">.</span></h1>
         <div class="row justify-content-center">
-          <div class="col-md-10">
+          <div class="col-md-12 col-xl-10">
             <form  class="lgen_form" id="lgen_form" method="post" novalidate>
               <div class="accordion_block">
                 <div class="accordion_q">
@@ -173,7 +173,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label class="form-label">Phone Number<span class="is-required"> *</span></label>
-                        <input type="tel" name="mobile" class="form-control">
+                        <input type="tel" name="phone" class="form-control">
                       </div>
                     </div>
                   </div>
@@ -215,9 +215,9 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-label">Property Type<span class="is-required"> *</span></label>
-                        <div class="prop_type_grid custom_scroll">
+                        <div class="prop_type_grid gg_02 custom_scroll">
                           <div class="custom-control prop_type custom-checkbox mb-15">
-                            <input type="checkbox" value="Flat" class="custom-control-input" name="property_type[]" id="flat">
+                            <input type="checkbox" value="Flat" class="custom-control-input" name="prop_type[]" id="flat">
                             <label class="custom-control-label prop_box text-center" for="flat">
                               <div class="prop_icon mx-auto mb-3">
                                 <img src="img/flat.svg" alt="Flat" />
@@ -226,7 +226,7 @@
                             </label>
                           </div>
                           <div class="custom-control prop_type custom-checkbox mb-15">
-                            <input type="checkbox" value="House/Villa" class="custom-control-input" name="property_type[]" id="hv">
+                            <input type="checkbox" value="House/Villa" class="custom-control-input" name="prop_type[]" id="hv">
                             <label class="custom-control-label prop_box text-center" for="hv">
                               <div class="prop_icon mx-auto mb-3">
                                 <img src="img/house.svg" alt="House/Villa" />
@@ -235,7 +235,7 @@
                             </label>
                           </div>
                           <div class="custom-control prop_type custom-checkbox mb-15">
-                            <input type="checkbox" value="Plot" class="custom-control-input" name="property_type[]" id="plot">
+                            <input type="checkbox" value="Plot" class="custom-control-input" name="prop_type[]" id="plot">
                             <label class="custom-control-label prop_box text-center" for="plot">
                               <div class="prop_icon mx-auto mb-3">
                                 <img src="img/house.svg" alt="Plot" />
@@ -244,7 +244,7 @@
                             </label>
                           </div>
                           <div class="custom-control prop_type custom-checkbox mb-15">
-                            <input type="checkbox" value="Commercial Office Space" class="custom-control-input" name="property_type[]" id="office">
+                            <input type="checkbox" value="Commercial Office Space" class="custom-control-input" name="prop_type[]" id="office">
                             <label class="custom-control-label prop_box text-center" for="office">
                               <div class="prop_icon mx-auto mb-3">
                                 <img src="img/office.svg" alt="Commercial Office Space" />
@@ -253,7 +253,7 @@
                             </label>
                           </div>
                           <div class="custom-control prop_type custom-checkbox mb-15">
-                            <input type="checkbox" value="Other Commercial" class="custom-control-input" name="property_type[]" id="other">
+                            <input type="checkbox" value="Other Commercial" class="custom-control-input" name="prop_type[]" id="other">
                             <label class="custom-control-label prop_box text-center" for="other">
                               <div class="prop_icon mx-auto mb-3">
                                 <img src="img/shop.svg" alt="Plot" />
@@ -262,7 +262,7 @@
                             </label>
                           </div>
                           <div class="custom-control prop_type custom-checkbox mb-15">
-                            <input type="checkbox" value="Shop/Showroom" class="custom-control-input" name="property_type[]" id="shop">
+                            <input type="checkbox" value="Shop/Showroom" class="custom-control-input" name="prop_type[]" id="shop">
                             <label class="custom-control-label prop_box text-center" for="shop">
                               <div class="prop_icon mx-auto mb-3">
                                 <img src="img/commercial.svg" alt="Plot" />
@@ -276,7 +276,7 @@
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                      <label class="form-label">Budget</label>
+                      <label class="form-label">Budget<span class="is-required"> *</span></label>
                       <div class="row"> 
                         <div class="col-md-6">
                           <div class="form-group">
@@ -352,16 +352,308 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label class="form-label">Number of Bedrooms</label>
-                        <select name="department" class="custom-select form-control">
-                          <option hidden></option>
-                          <option value="Shift to my own house">Shift to my own house</option>
-                          <option value="Move to a bigger house">Move to a bigger house</option>
-                          <option value="Switch to a better locality">Switch to a better locality</option>
-                          <option value="Invest in a good property ">Invest in a good property </option>
-                          <option value="Settle in another city">Settle in another city</option>
-                          <option value="Other">Other</option>
-                        </select>
+                        <label class="form-label">Number of Bedrooms<span class="is-required"> *</span></label>
+                        <div class="bdr_grid gg_01">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="1BHK" class="custom-control-input" name="bedrooms[]" id="1BHK">
+                            <label class="custom-control-label bdr_op text-center" for="1BHK">
+                              <p class="prop_type">1</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="2BHK" class="custom-control-input" name="bedrooms[]" id="2BHK">
+                            <label class="custom-control-label bdr_op text-center" for="2BHK">
+                              <p class="prop_type">2</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="3BHK" class="custom-control-input" name="bedrooms[]" id="3BHK">
+                            <label class="custom-control-label bdr_op text-center" for="3BHK">
+                              <p class="prop_type">3</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="4BHK" class="custom-control-input" name="bedrooms[]" id="4BHK">
+                            <label class="custom-control-label bdr_op text-center" for="4BHK">
+                              <p class="prop_type">4</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="5BHK" class="custom-control-input" name="bedrooms[]" id="5BHK">
+                            <label class="custom-control-label bdr_op text-center" for="5BHK">
+                              <p class="prop_type">5</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="+5BHK" class="custom-control-input" name="bedrooms[]" id="+5BHK">
+                            <label class="custom-control-label bdr_op text-center" for="+5BHK">
+                              <p class="prop_type">+5</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-label">Sub-Property Type<span class="is-required"> *</span></label>
+                        <div class="sbpr_grid gg_01">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Multistorey Apartment" class="custom-control-input" name="subprop_type[]" id="multi">
+                            <label class="custom-control-label bdr_op text-center" for="multi">
+                              <p class="prop_type">Multistorey Apartment</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Builder Floor Apartment" class="custom-control-input" name="subprop_type[]" id="build_floor">
+                            <label class="custom-control-label bdr_op text-center" for="build_floor">
+                              <p class="prop_type">Builder Floor Apartment</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Studio Apartment" class="custom-control-input" name="subprop_type[]" id="studio">
+                            <label class="custom-control-label bdr_op text-center" for="studio">
+                              <p class="prop_type">Studio Apartment</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Penthouse" class="custom-control-input" name="subprop_type[]" id="penthouse">
+                            <label class="custom-control-label bdr_op text-center" for="penthouse">
+                              <p class="prop_type">Penthouse</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-label">Property Facing</label>
+                        <div class="pf_grid gg_01">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="East" class="custom-control-input" name="prop_face[]" id="east">
+                            <label class="custom-control-label bdr_op text-center" for="east">
+                              <p class="prop_type">East</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="North" class="custom-control-input" name="prop_face[]" id="north">
+                            <label class="custom-control-label bdr_op text-center" for="north">
+                              <p class="prop_type">North</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="North East" class="custom-control-input" name="prop_face[]" id="ne">
+                            <label class="custom-control-label bdr_op text-center" for="ne">
+                              <p class="prop_type">North East</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="North West" class="custom-control-input" name="prop_face[]" id="nw">
+                            <label class="custom-control-label bdr_op text-center" for="nw">
+                              <p class="prop_type">North West</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="South" class="custom-control-input" name="prop_face[]" id="south">
+                            <label class="custom-control-label bdr_op text-center" for="south">
+                              <p class="prop_type">South</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="South East" class="custom-control-input" name="prop_face[]" id="se">
+                            <label class="custom-control-label bdr_op text-center" for="se">
+                              <p class="prop_type">South East</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="South West" class="custom-control-input" name="prop_face[]" id="sw">
+                            <label class="custom-control-label bdr_op text-center" for="sw">
+                              <p class="prop_type">South West</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="West" class="custom-control-input" name="prop_face[]" id="west">
+                            <label class="custom-control-label bdr_op text-center" for="west">
+                              <p class="prop_type">West</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">Furnishing Status</label>
+                        <div class="furn_grid gg_02 custom_scroll">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Furnished" class="custom-control-input" name="furn[]" id="furn">
+                            <label class="custom-control-label prop_box text-center" for="furn">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/furnished.svg" alt="Flat" />
+                              </div>
+                              <p class="prop_type">Furnished</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Semi Furnished" class="custom-control-input" name="furn[]" id="semi">
+                            <label class="custom-control-label prop_box text-center" for="semi">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/house.svg" alt="House/Villa" />
+                              </div>
+                              <p class="prop_type">Semi Furnished</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Unfurnished" class="custom-control-input" name="furn[]" id="unf">
+                            <label class="custom-control-label prop_box text-center" for="unf">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/house.svg" alt="Plot" />
+                              </div>
+                              <p class="prop_type">Unfurnished</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">Amenities</label>
+                        <div class="am_grid gg_02 custom_scroll">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Car Parking" class="custom-control-input" name="amenities[]" id="car">
+                            <label class="custom-control-label prop_box text-center" for="car">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/parking.svg" alt="Car Parking" />
+                              </div>
+                              <p class="prop_type">Car Parking</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Lift" class="custom-control-input" name="amenities[]" id="lift">
+                            <label class="custom-control-label prop_box text-center" for="lift">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/lift.svg" alt="Lift" />
+                              </div>
+                              <p class="prop_type">Lift</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Power Backup" class="custom-control-input" name="amenities[]" id="power">
+                            <label class="custom-control-label prop_box text-center" for="power">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/power-backup.svg" alt="Power Backip"/>
+                              </div>
+                              <p class="prop_type">Power Backup</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Gas Pipeline" class="custom-control-input" name="amenities[]" id="gas">
+                            <label class="custom-control-label prop_box text-center" for="gas">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/gas-pipeline.svg" alt="Gas Pipeline" />
+                              </div>
+                              <p class="prop_type">Gas Pipeline</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Park/Play Area" class="custom-control-input" name="amenities[]" id="park">
+                            <label class="custom-control-label prop_box text-center" for="park">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/park.svg" alt="Park/Play Area" />
+                              </div>
+                              <p class="prop_type">Park/Play Area</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Gymnasium" class="custom-control-input" name="amenities[]" id="gym">
+                            <label class="custom-control-label prop_box text-center" for="gym">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/gym.svg" alt="Gymnasium" />
+                              </div>
+                              <p class="prop_type">Gymnasium</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Swimming Pool" class="custom-control-input" name="amenities[]" id="pool">
+                            <label class="custom-control-label prop_box text-center" for="pool">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/swimming-pool.svg" alt="Swimming Pool" />
+                              </div>
+                              <p class="prop_type">Swimming Pool</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Clubhouse" class="custom-control-input" name="amenities[]" id="club">
+                            <label class="custom-control-label prop_box text-center" for="club">
+                              <div class="prop_icon mx-auto mb-3">
+                                <img src="img/clubhouse.svg" alt="Clubhouse" />
+                              </div>
+                              <p class="prop_type">Clubhouse</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">Number of Bathrooms</label>
+                        <div class="bdr_grid gg_01">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="1 Bathroom" class="custom-control-input" name="bedrooms[]" id="1">
+                            <label class="custom-control-label bdr_op text-center" for="1">
+                              <p class="prop_type">1</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="2 Bathrooms" class="custom-control-input" name="bedrooms[]" id="2">
+                            <label class="custom-control-label bdr_op text-center" for="2">
+                              <p class="prop_type">2</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="3 Bathrooms" class="custom-control-input" name="bedrooms[]" id="3">
+                            <label class="custom-control-label bdr_op text-center" for="3">
+                              <p class="prop_type">3</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="4 Bathrooms" class="custom-control-input" name="bedrooms[]" id="4">
+                            <label class="custom-control-label bdr_op text-center" for="4">
+                              <p class="prop_type">4</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="5 Bathrooms" class="custom-control-input" name="bedrooms[]" id="5">
+                            <label class="custom-control-label bdr_op text-center" for="5">
+                              <p class="prop_type">5</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">Posession Status<span class="is-required"> *</span></label>
+                        <div class="pos_grid gg_01">
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Under Construction" class="custom-control-input" name="bedrooms[]" id="under_c">
+                            <label class="custom-control-label bdr_op text-center" for="under_c">
+                              <p class="prop_type">Under Construction</p>
+                            </label>
+                          </div>
+                          <div class="custom-control prop_type custom-checkbox mb-15">
+                            <input type="checkbox" value="Ready-to-Move" class="custom-control-input" name="bedrooms[]" id="ready">
+                            <label class="custom-control-label bdr_op text-center" for="ready">
+                              <p class="prop_type">Ready-to-Move</p>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

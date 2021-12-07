@@ -1684,14 +1684,14 @@ html {
 }
 
 .form-group {
-  margin-bottom: 1.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .form-label {
   display: block;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 1.4;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
   color: #335164;
 }
 

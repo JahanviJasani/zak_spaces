@@ -357,8 +357,7 @@ img, svg {
 /* Property Type Checkboxes */
 .prop_type_grid {
   display: grid;
-  grid-gap: 1.5rem;
-  padding: 1.5rem 0 2rem;
+  padding-bottom: 1.5rem;
   grid-template-columns: repeat(auto-fill,minmax(230px,auto));
   grid-auto-flow: column;
   grid-auto-columns: minmax(230px,1fr);
@@ -369,7 +368,7 @@ img, svg {
   cursor: pointer;
   background: #f2efed;
   border: 1.5px solid transparent;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 1rem;
   transition: all 0.3s;
 }
 
@@ -382,12 +381,66 @@ img, svg {
   max-width: 45px;
 }
 
-.prop_type .custom-control-input:checked + .prop_box {
+.custom-control-input:checked + label {
   background:#fff;
   border-color: #D11919;
   box-shadow: 0px 48px 100px 0px rgba(210, 207, 206, 0.4);
 }
 
+/* Bedroom Checkboxes */
+.bdr_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.bdr_op {
+  background: #f2efed;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+/* Subproperty Checkboxes */
+.sbpr_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Direction Checkboxes */
+.pf_grid {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+}
+
+.furn_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.am_grid {
+  display: grid;
+  padding-bottom: 1.5rem;
+  grid-template-columns: repeat(auto-fill,minmax(160px,auto));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(160px,1fr);
+  overflow-x: auto;
+}
+
+.pos_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gg_01 {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.gg_02 {
+  grid-column-gap: 1.125rem;
+  grid-row-gap: 1.125rem;
+}
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
